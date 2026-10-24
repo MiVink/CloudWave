@@ -1,0 +1,122 @@
+/* ============================================================
+   Cloudwave design tokens
+   Direction: "midnight studio" — warm SoundCloud ember against a
+   cool, quiet charcoal shell. One accent, plenty of neutral depth.
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --bg: #08090c;
+  --bg-deep: #050609;
+  --surface: #0d0f14;
+  --surface-2: #12141b;
+  --surface-3: #181b23;
+  --surface-glass: rgba(18, 20, 27, 0.72);
+
+  /* Text */
+  --text: #f4f5f7;
+  --text-soft: #c6cad3;
+  --muted: #8d93a0;
+  --dim: #626875;
+
+  /* Lines */
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --line-accent: color-mix(in srgb, var(--accent) 45%, transparent);
+
+  /* Accent (overridden by data-accent below) */
+  --accent: #ff5a1f;
+  --accent-hi: #ff8a4c;
+  --accent-ink: #180a03;
+  --accent-soft: rgba(255, 90, 31, 0.13);
+  --accent-softer: rgba(255, 90, 31, 0.07);
+  --accent-glow: rgba(255, 90, 31, 0.28);
+
+  /* Secondary highlight — keeps the palette from collapsing to one hue */
+  --cool: #7dd3fc;
+  --cool-soft: rgba(125, 211, 252, 0.12);
+
+  /* Semantic */
+  --good: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+
+  /* Geometry */
+  --radius-xs: 8px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --titlebar-h: 48px;
+  --player-h: 92px;
+  --sidebar-w: 248px;
+  --sidebar-collapsed-w: 78px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.55);
+  --shadow-accent: 0 8px 26px color-mix(in srgb, var(--accent) 28%, transparent);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur: 220ms;
+  --dur-slow: 420ms;
+
+  /* Type */
+  --font: 'Inter Variable', 'Inter', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system,
+    'Helvetica Neue', sans-serif;
+  --mono: 'Cascadia Code', 'SF Mono', 'JetBrains Mono', Consolas, monospace;
+
+  color-scheme: dark;
+}
+
+:root[data-accent='ember'] {
+  --accent: #ff5a1f;
+  --accent-hi: #ff8a4c;
+  --accent-ink: #190a03;
+  --accent-soft: rgba(255, 90, 31, 0.13);
+  --accent-softer: rgba(255, 90, 31, 0.07);
+  --accent-glow: rgba(255, 90, 31, 0.3);
+}
+
+:root[data-accent='coral'] {
+  --accent: #ff6b8a;
+  --accent-hi: #ff9db3;
+  --accent-ink: #1d060c;
+  --accent-soft: rgba(255, 107, 138, 0.13);
+  --accent-softer: rgba(255, 107, 138, 0.07);
+  --accent-glow: rgba(255, 107, 138, 0.3);
+}
+
+:root[data-accent='lime'] {
+  --accent: #c8f36b;
+  --accent-hi: #ddff9c;
+  --accent-ink: #111805;
+  --accent-soft: rgba(200, 243, 107, 0.12);
+  --accent-softer: rgba(200, 243, 107, 0.06);
+  --accent-glow: rgba(200, 243, 107, 0.26);
+}
+
+:root[data-accent='cyan'] {
+  --accent: #5fe3d0;
+  --accent-hi: #93f5e7;
+  --accent-ink: #04130f;
+  --accent-soft: rgba(95, 227, 208, 0.12);
+  --accent-softer: rgba(95, 227, 208, 0.06);
+  --accent-glow: rgba(95, 227, 208, 0.26);
+}
+
+:root[data-accent='violet'] {
+  --accent: #a78bfa;
+  --accent-hi: #c4b0ff;
+  --accent-ink: #100724;
+  --accent-soft: rgba(167, 139, 250, 0.13);
+  --accent-softer: rgba(167, 139, 250, 0.07);
+  --accent-glow: rgba(167, 139, 250, 0.3);
+}
